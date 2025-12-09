@@ -8,7 +8,7 @@
 - NIST NVD APIから情報を取得。  
     - https://nvdlib.com/en/latest/
 
-### 前準備
+### 準備
 - `input_file`として、`report/cve.csv`にCVEのリストをCSV形式で置いておく必要がある
     - 例:
     ```csv
@@ -37,8 +37,23 @@ else:
     severity = "Unknown"
 ```
 
+### 環境準備
+使用するライブラリは以下
+- nvdlib
+- time
+- csv
+- os
+必要に応じて`pip`などで用意しておく。
+また、`uv`を使用しているので、以下で`uv`をインストールしていれば
 
-### 実行
+```shell  
+# On macOS and Linux.
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+```
+```
+
+以下コマンドで実行ができる。
 ```shell
 uv run get_cvss.py 
 ```
