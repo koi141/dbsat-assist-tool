@@ -43,14 +43,13 @@ else:
 - time
 - csv
 - os
-必要に応じて`pip`などで用意しておく。
+
+必要に応じて`pip`などで用意しておく。  
 また、`uv`を使用しているので、以下で`uv`をインストールしていれば
 
 ```shell  
 # On macOS and Linux.
 curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-```
 ```
 
 以下コマンドで実行ができる。
